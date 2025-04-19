@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041F\u0440\u043E\u0433\u0430\\ISTTPLab2\\src\\ComputerShopAPIWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D41E4849-DD32-40E2-959D-D84F9719719F}|ComputerShopAPIWebApp\\ComputerShopAPIWebApp.csproj|c:\\users\\user\\\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0443\u043D\u0438\u0432\u0435\u0440\\\u043F\u0440\u043E\u0433\u0430\\isttplab2\\src\\computershopapiwebapp\\computershopapiwebapp\\models\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41E4849-DD32-40E2-959D-D84F9719719F}|ComputerShopAPIWebApp\\ComputerShopAPIWebApp.csproj|solutionrelative:computershopapiwebapp\\models\\computer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41E4849-DD32-40E2-959D-D84F9719719F}|ComputerShopAPIWebApp\\ComputerShopAPIWebApp.csproj|c:\\users\\user\\\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0443\u043D\u0438\u0432\u0435\u0440\\\u043F\u0440\u043E\u0433\u0430\\isttplab2\\src\\computershopapiwebapp\\computershopapiwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41E4849-DD32-40E2-959D-D84F9719719F}|ComputerShopAPIWebApp\\ComputerShopAPIWebApp.csproj|solutionrelative:computershopapiwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41E4849-DD32-40E2-959D-D84F9719719F}|ComputerShopAPIWebApp\\ComputerShopAPIWebApp.csproj|c:\\users\\user\\\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0443\u043D\u0438\u0432\u0435\u0440\\\u043F\u0440\u043E\u0433\u0430\\isttplab2\\src\\computershopapiwebapp\\computershopapiwebapp\\models\\shopapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D41E4849-DD32-40E2-959D-D84F9719719F}|ComputerShopAPIWebApp\\ComputerShopAPIWebApp.csproj|solutionrelative:computershopapiwebapp\\models\\shopapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D41E4849-DD32-40E2-959D-D84F9719719F}|ComputerShopAPIWebApp\\ComputerShopAPIWebApp.csproj|c:\\users\\user\\\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0443\u043D\u0438\u0432\u0435\u0440\\\u043F\u0440\u043E\u0433\u0430\\isttplab2\\src\\computershopapiwebapp\\computershopapiwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D41E4849-DD32-40E2-959D-D84F9719719F}|ComputerShopAPIWebApp\\ComputerShopAPIWebApp.csproj|solutionrelative:computershopapiwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041F\u0440\u043E\u0433\u0430\\ISTTPLab2\\src\\ComputerShopAPIWebApp\\ComputerShopAPIWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "ComputerShopAPIWebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041F\u0440\u043E\u0433\u0430\\ISTTPLab2\\src\\ComputerShopAPIWebApp\\ComputerShopAPIWebApp\\Program.cs",
+              "RelativeToolTip": "ComputerShopAPIWebApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T11:36:45.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041F\u0440\u043E\u0433\u0430\\ISTTPLab2\\src\\ComputerShopAPIWebApp\\ComputerShopAPIWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "ComputerShopAPIWebApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041F\u0440\u043E\u0433\u0430\\ISTTPLab2\\src\\ComputerShopAPIWebApp\\ComputerShopAPIWebApp\\appsettings.json",
+              "RelativeToolTip": "ComputerShopAPIWebApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-19T11:33:40.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShopAPIContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041F\u0440\u043E\u0433\u0430\\ISTTPLab2\\src\\ComputerShopAPIWebApp\\ComputerShopAPIWebApp\\Models\\ShopAPIContext.cs",
+              "RelativeDocumentMoniker": "ComputerShopAPIWebApp\\Models\\ShopAPIContext.cs",
+              "ToolTip": "C:\\Users\\User\\\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041F\u0440\u043E\u0433\u0430\\ISTTPLab2\\src\\ComputerShopAPIWebApp\\ComputerShopAPIWebApp\\Models\\ShopAPIContext.cs",
+              "RelativeToolTip": "ComputerShopAPIWebApp\\Models\\ShopAPIContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T11:30:50.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Computer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041F\u0440\u043E\u0433\u0430\\ISTTPLab2\\src\\ComputerShopAPIWebApp\\ComputerShopAPIWebApp\\Models\\Computer.cs",
+              "RelativeDocumentMoniker": "ComputerShopAPIWebApp\\Models\\Computer.cs",
+              "ToolTip": "C:\\Users\\User\\\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0438\\\u0423\u043D\u0438\u0432\u0435\u0440\\\u041F\u0440\u043E\u0433\u0430\\ISTTPLab2\\src\\ComputerShopAPIWebApp\\ComputerShopAPIWebApp\\Models\\Computer.cs",
+              "RelativeToolTip": "ComputerShopAPIWebApp\\Models\\Computer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T11:13:41.994Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
