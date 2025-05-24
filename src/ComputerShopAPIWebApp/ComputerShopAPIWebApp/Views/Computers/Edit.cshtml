@@ -1,0 +1,78 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model ComputerShopAPIWebApp.Models.Computer
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Computer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label"></label>
+                <input asp-for="Type" class="form-control" />
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand" class="control-label"></label>
+                <input asp-for="Brand" class="form-control" />
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ScreenSize" class="control-label"></label>
+                <input asp-for="ScreenSize" class="form-control" />
+                <span asp-validation-for="ScreenSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resolution" class="control-label"></label>
+                <input asp-for="Resolution" class="form-control" />
+                <span asp-validation-for="Resolution" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Storage" class="control-label"></label>
+                <input asp-for="Storage" class="form-control" />
+                <span asp-validation-for="Storage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RAMId" class="control-label"></label>
+                <select asp-for="RAMId" class="form-control" asp-items="ViewBag.RAMId"></select>
+                <span asp-validation-for="RAMId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProcessorId" class="control-label"></label>
+                <select asp-for="ProcessorId" class="form-control" asp-items="ViewBag.ProcessorId"></select>
+                <span asp-validation-for="ProcessorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GPUID" class="control-label"></label>
+                <select asp-for="GPUID" class="form-control" asp-items="ViewBag.GPUID"></select>
+                <span asp-validation-for="GPUID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

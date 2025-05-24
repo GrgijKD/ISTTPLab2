@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model ComputerShopAPIWebApp.Models.Processor
+
+@{
+    ViewData["Title"] = "Додавання процесора";
+}
+
+<h1>Додати</h1>
+
+<h4>Процесор</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Назва</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cores" class="control-label">Кількість ядер</label>
+                <input list="coreOptions" asp-for="Cores" class="form-control" />
+                <datalist id="coreOptions">
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                </datalist>
+                <span asp-validation-for="Cores" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Frequency" class="control-label">Частота</label>
+                <input asp-for="Frequency" class="form-control" />
+                <span asp-validation-for="Frequency" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Додати" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

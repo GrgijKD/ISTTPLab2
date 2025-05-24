@@ -1,10 +1,37 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "ComputerSuperShop - Головна";
 }
 
+<style>
+    .category-image {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+</style>
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4 mb-4">Оберіть категорію</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <a asp-controller="Computers" asp-action="Index" asp-route-type="laptop">
+                <img src="~/laptop.png" alt="Ноутбуки" class="category-image rounded shadow mb-2" />
+            </a>
+            <p>
+                <a asp-controller="Computers" asp-action="Index" asp-route-type="laptop" class="btn btn-primary">Ноутбуки</a>
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <a asp-controller="Computers" asp-action="Index" asp-route-type="desktop">
+                <img src="~/desktop.png" alt="Комп’ютери" class="category-image rounded shadow mb-2" />
+            </a>
+            <p>
+                <a asp-controller="Computers" asp-action="Index" asp-route-type="desktop" class="btn btn-primary">Комп'ютери</a>
+            </p>
+        </div>
+    </div>
 </div>

@@ -1,4 +1,6 @@
+using System.Globalization;
 using ComputerShopAPIWebApp.Models;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,7 +23,19 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+var supportedCultures = new[] { new CultureInfo("uk-UA") };
+
+app.UseRequestLocalization(new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture("uk-UA"),
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures
+});
+
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseDefaultFiles();
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -30,7 +44,9 @@ app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapControllers();
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
 });
 
 app.MapRazorPages();

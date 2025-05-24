@@ -1,0 +1,173 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@using ComputerShopAPIWebApp.Models
+
+@model ComputerShopAPIWebApp.Models.Computer
+
+@{
+    ViewData["Title"] = "Додавання комп'ютера";
+}
+
+<h1>Додати</h1>
+
+<h4>Комп'ютер</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Назва</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label">Тип</label>
+                <select asp-for="Type" class="form-control" id="TypeSelect">
+                    <option value="Ноутбук">Ноутбук</option>
+                    <option value="Комп'ютер">Комп'ютер</option>
+                </select>
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand" class="control-label">Фірма</label>
+                <input asp-for="Brand" class="form-control" />
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ScreenSize" class="control-label">Діагональ екрану*</label>
+                <input list="screenSizes" asp-for="ScreenSize" class="form-control" id="ScreenSize" />
+                <datalist id="screenSizes">
+                    <option value="14">14</option>
+                    <option value="15.6">15.6</option>
+                    <option value="17">17</option>
+                </datalist>
+                <span asp-validation-for="ScreenSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resolution" class="control-label">Роздільна здатність*</label>
+                <input list="resolutions" asp-for="Resolution" class="form-control" id="Resolution" />
+                <datalist id="resolutions">
+                    <option value="1920x1080">1920x1080</option>
+                    <option value="2560x1440">2560x1440</option>
+                    <option value="3840x2160">3840x2160</option>
+                </datalist>
+                <span asp-validation-for="Resolution" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Storage" class="control-label">Обсяг пам'яті</label>
+                <input list="storageOptions" asp-for="Storage" class="form-control" />
+                <datalist id="storageOptions">
+                    <option value="512 ГБ">512 ГБ</option>
+                    <option value="1024 ГБ">1024 ГБ</option>
+                </datalist>
+                <span asp-validation-for="Storage" class="text-danger"></span>
+            </div>
+            <div class="form-group d-flex align-items-end gap-2">
+                <div style="flex: 1;">
+                    <label for="RAMId" class="control-label">Оперативна пам'ять</label>
+                    <select id="RAMId" name="RAMId" class="form-control">
+                        @if (ViewData["RAMId"] != null && ((SelectList)ViewData["RAMId"]).Any())
+                        {
+                            foreach (var item in (SelectList)ViewData["RAMId"])
+                            {
+                                <option value="@item.Value">@item.Text</option>
+                            }
+                        }
+                        else
+                        {
+                            <option value="">Немає доступних варіантів</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <a href="@Url.Action("Create", "RAMs")" class="btn btn-primary">Додати</a>
+                </div>
+            </div>
+            <div class="form-group d-flex align-items-end gap-2">
+                <div style="flex: 1;">
+                    <label for="ProcessorId" class="control-label">Процесор</label>
+                    <select id="ProcessorId" name="ProcessorId" class="form-control">
+                        @if (ViewData["ProcessorId"] != null && ((SelectList)ViewData["ProcessorId"]).Any())
+                        {
+                            foreach (var item in (SelectList)ViewData["ProcessorId"])
+                            {
+                                <option value="@item.Value">@item.Text</option>
+                            }
+                        }
+                        else
+                        {
+                            <option value="">Немає доступних варіантів</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <a href="@Url.Action("Create", "Processors")" class="btn btn-primary">Додати</a>
+                </div>
+            </div>
+            <div class="form-group d-flex align-items-end gap-2">
+                <div style="flex: 1;">
+                    <label for="GPUID" class="control-label">Відеокарта*</label>
+                    <select id="GPUID" name="GPUID" class="form-control">
+                        @if (ViewData["GPUID"] != null && ((SelectList)ViewData["GPUID"]).Any())
+                        {
+                            foreach (var item in (SelectList)ViewData["GPUID"])
+                            {
+                                <option value="@item.Value">@item.Text</option>
+                            }
+                        }
+                        else
+                        {
+                            <option value="">Немає доступних варіантів</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <a href="@Url.Action("Create", "GPUs")" class="btn btn-primary">Додати</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<p>* Поля Діагональ екрану, Роздільна здатність та Відеокарта не є обов'язковими.</p>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<script>
+    window.onload = function () {
+        var typeSelect = document.getElementById('TypeSelect');
+
+        if (typeSelect) {
+            var screenSizeField = document.getElementById('ScreenSize');
+            var resolutionField = document.getElementById('Resolution');
+
+            typeSelect.addEventListener('change', function () {
+                if (this.value === 'Комп\'ютер') {
+                    screenSizeField.disabled = true;
+                    resolutionField.disabled = true;
+                } else {
+                    screenSizeField.disabled = false;
+                    resolutionField.disabled = false;
+                }
+            });
+
+            if (typeSelect.value === 'Комп\'ютер') {
+                screenSizeField.disabled = true;
+                resolutionField.disabled = true;
+            }
+        }
+    };
+</script>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

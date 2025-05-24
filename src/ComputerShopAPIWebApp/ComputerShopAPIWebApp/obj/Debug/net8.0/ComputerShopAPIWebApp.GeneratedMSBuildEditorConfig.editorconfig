@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ComputerShopAPIWebApp
 build_property.RootNamespace = ComputerShopAPIWebApp
@@ -42,6 +50,90 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/Computers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/Computers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/Computers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/Computers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/Computers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/GPUs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR1BVc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/GPUs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR1BVc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/GPUs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR1BVc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/GPUs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR1BVc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/GPUs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR1BVc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/Processors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29yc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/Processors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29yc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/Processors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29yc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/Processors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29yc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/Processors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29yc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/RAMs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUkFNc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/RAMs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUkFNc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/RAMs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUkFNc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/RAMs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUkFNc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/RAMs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUkFNc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Загрузки/Универ/Прога/ISTTPLab2/src/ComputerShopAPIWebApp/ComputerShopAPIWebApp/Pages/Shared/_Layout.cshtml]

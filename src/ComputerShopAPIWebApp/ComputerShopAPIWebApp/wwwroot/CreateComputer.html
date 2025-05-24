@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Додавання комп'ютера</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        a.btn {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            a.btn:hover {
+                background-color: #2980b9;
+            }
+
+        form {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="number"]{
+            width: 99%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        select {
+            width: 103%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+            }
+
+        .btn-info {
+            background-color: #17a2b8;
+            color: white;
+            margin-top: 8px;
+        }
+
+            .btn-info:hover {
+                background-color: #117a8b;
+            }
+
+        .error-message {
+            color: red;
+            font-size: 13px;
+            margin-top: 5px;
+            display: block;
+        }
+
+        @media (max-width: 640px) {
+            form {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Додати комп'ютер</h1>
+    <div style="text-align:center;">
+        <a href="Index.html" class="btn btn-primary">Головна</a>
+        <a href="CreateRAM.html" class="btn btn-primary">Додати оперативну пам'ять</a>
+        <a href="CreateProcessor.html" class="btn btn-primary">Додати процесор</a>
+        <a href="CreateGPU.html" class="btn btn-primary">Додати відеокарту</a>
+    </div>
+    <form id="computer-form" novalidate>
+        <div class="form-group">
+            <label for="name">Назва</label>
+            <input type="text" id="name" name="name" class="form-control" required />
+            <span class="error-message text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="type">Тип</label>
+            <select id="type" name="type" class="form-control" required>
+                <option value="">Оберіть тип</option>
+                <option value="Laptop">Ноутбук</option>
+                <option value="Desktop">Комп'ютер</option>
+            </select>
+            <span class="error-message text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="brand">Фірма</label>
+            <input type="text" id="brand" name="brand" class="form-control" required />
+            <span class="error-message text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="screenSize">Діагональ екрану</label>
+            <input type="text" id="screenSize" name="screenSize" class="form-control" required />
+            <span class="error-message text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="resolution">Роздільна здатність</label>
+            <input type="text" id="resolution" name="resolution" class="form-control" required />
+            <span class="error-message text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="storage">Обсяг пам'яті</label>
+            <input type="text" id="storage" name="storage" class="form-control" required />
+            <span class="error-message text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="RAMId">Оперативна пам'ять</label>
+            <select id="RAMId" name="RAMId" class="form-control" required>
+                <option value="">Завантаження...</option>
+            </select>
+            <span class="error-message text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="ProcessorId">Процесор</label>
+            <select id="ProcessorId" name="ProcessorId" class="form-control" required>
+                <option value="">Завантаження...</option>
+            </select>
+            <span class="error-message text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="GPUID">Відеокарта</label>
+            <select id="GPUID" name="GPUID" class="form-control">
+                <option value="">Завантаження...</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="price">Ціна</label>
+            <input type="number" id="price" name="price" class="form-control" required />
+            <span class="error-message text-danger"></span>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Додати комп'ютер</button>
+        </div>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const RAMMap = new Map();
+            const ProcessorMap = new Map();
+            const GPUMap = new Map();
+
+            function loadOptions(endpoint, selectId, map, allowEmpty = false) {
+                fetch(endpoint)
+                    .then(response => response.json())
+                    .then(data => {
+                        const select = document.getElementById(selectId);
+                        select.innerHTML = '';
+                        map.clear();
+
+                        if (allowEmpty) {
+                            const emptyOption = document.createElement('option');
+                            emptyOption.value = '';
+                            emptyOption.text = '--- Без відеокарти ---';
+                            select.appendChild(emptyOption);
+                        }
+
+                        if (data.length > 0) {
+                            data.forEach(item => {
+                                const option = document.createElement('option');
+                                option.value = item.id;
+                                option.text = item.name;
+                                select.appendChild(option);
+
+                                map.set(item.id, item.name);
+                            });
+                        } else {
+                            const option = document.createElement('option');
+                            option.value = '';
+                            option.text = 'Немає доступних варіантів';
+                            select.appendChild(option);
+                        }
+                    })
+                    .catch(error => {
+                        console.error(`Помилка при завантаженні ${selectId}:`, error);
+                        const select = document.getElementById(selectId);
+                        select.innerHTML = '';
+                        const option = document.createElement('option');
+                        option.value = '';
+                        option.text = 'Помилка завантаження';
+                        select.appendChild(option);
+                    });
+            }
+
+            loadOptions('/api/rams', 'RAMId', RAMMap);
+            loadOptions('/api/processors', 'ProcessorId', ProcessorMap);
+            loadOptions('/api/gpus', 'GPUID', GPUMap, true);
+
+            const form = document.getElementById('computer-form');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                let isValid = true;
+                const fields = form.querySelectorAll('[required]');
+
+                fields.forEach(field => {
+                    const errorSpan = field.parentElement.querySelector('.error-message');
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        errorSpan.textContent = 'Заповніть це поле';
+                        field.classList.add('is-invalid');
+                    } else {
+                        errorSpan.textContent = '';
+                        field.classList.remove('is-invalid');
+                    }
+                });
+
+                const priceInput = form.querySelector('#price');
+                if (priceInput) {
+                    const priceError = priceInput.parentElement.querySelector('.error-message');
+                    const priceValue = Number(priceInput.value);
+                    if (!Number.isInteger(priceValue) || priceValue <= 0) {
+                        isValid = false;
+                        priceError.textContent = 'Ціна має бути цілим числом більше 0';
+                        priceInput.classList.add('is-invalid');
+                    } else {
+                        priceError.textContent = '';
+                        priceInput.classList.remove('is-invalid');
+                    }
+                }
+
+                if (!isValid) return;
+
+                const selectedRAMId = parseInt(document.getElementById('RAMId').value);
+                const selectedProcessorId = parseInt(document.getElementById('ProcessorId').value);
+                const selectedGPUId = document.getElementById('GPUID').value ? parseInt(document.getElementById('GPUID').value) : null;
+
+                const formData = {
+                    name: document.getElementById('name').value,
+                    type: document.getElementById('type').value,
+                    brand: document.getElementById('brand').value,
+                    screenSize: document.getElementById('screenSize').value,
+                    resolution: document.getElementById('resolution').value,
+                    storage: document.getElementById('storage').value,
+                    RAMId: selectedRAMId,
+                    ProcessorId: selectedProcessorId,
+                    GPUID: selectedGPUId,
+                    price: parseInt(document.getElementById('price').value)
+                };
+
+                fetch('/api/computers', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                    .then(response => {
+                        if (!response.ok) throw new Error('Помилка HTTP');
+                        return response.json();
+                    })
+                    .then(data => {
+                        alert('Комп\'ютер успішно додано!');
+                        form.reset();
+                    })
+                    .catch(error => {
+                        console.error('Помилка при додаванні комп\'ютера: ', error);
+                        alert('Помилка при додаванні комп\'ютера.');
+                    });
+            });
+        });
+    </script>
+
+    <style>
+        .is-invalid {
+            border-color: red;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.875em;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,102 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model IEnumerable<ComputerShopAPIWebApp.Models.Computer>
+
+@{
+    ViewData["Title"] = "Товари";
+    var selectedType = Context.Request.Query["type"].ToString().ToLower();
+}
+
+<h1>Комп'ютери</h1>
+
+<p>
+    <a href="@Url.Action("Create", "Computers")" class="btn btn-primary">Додати товар</a>
+</p>
+
+<form method="get" asp-action="Index">
+    <label for="type">Фільтр за типом:</label>
+    <div>
+        <label>
+            <input type="radio" name="type" value="" @(selectedType == "" ? "checked" : "") />
+            Всі
+        </label>
+        <label>
+            <input type="radio" name="type" value="laptop" @(selectedType == "laptop" ? "checked" : "") />
+            Ноутбуки
+        </label>
+        <label>
+            <input type="radio" name="type" value="desktop" @(selectedType == "desktop" ? "checked" : "") />
+            Комп'ютери
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Фільтрувати</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ScreenSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Resolution)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Storage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RAM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Processor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GPU)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ScreenSize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Resolution)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Storage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RAM.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Processor.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GPU.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Редагувати</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Детальніше</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Видалити</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,50 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model ComputerShopAPIWebApp.Models.GPU
+
+@{
+    ViewData["Title"] = "Додавання відеокарти";
+}
+
+<h1>Додати</h1>
+
+<h4>Відеокарта</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Назва</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VRAM" class="control-label">Обсяг відеопам'яті</label>
+                <input list="vramOptions" asp-for="VRAM" class="form-control" />
+                <datalist id="vramOptions">
+                    <option value="6 ГБ">6 ГБ</option>
+                    <option value="8 ГБ">8 ГБ</option>
+                    <option value="10 ГБ">10 ГБ</option>
+                    <option value="12 ГБ">12 ГБ</option>
+                    <option value="16 ГБ">16 ГБ</option>
+                </datalist>
+                <span asp-validation-for="VRAM" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Додати" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
